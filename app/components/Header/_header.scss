@@ -1,0 +1,59 @@
+.sale-container{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+    color: white;
+    font-size: 18px;
+    .sale-time-box{
+        border: 2px solid white; 
+        padding: 0 10px;
+        margin-right: 5px;
+        text-align: center;
+        line-height: 1;
+        font-weight: bold;
+        .text-time{
+            font-size: 10px;
+            font-weight: 300;
+        }
+    }
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 20px;
+    border-width: 1px;
+    border-style: solid;
+    .logo{
+        background-color: black;
+        color: white;
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        padding: 0px 40px;
+    }
+    .combo-logo{
+        display: flex;
+        flex-direction: row;
+        width: 8%;
+        justify-content: space-between;
+    }
+}
+
+.menu-nav{
+    font-size: 18px;
+    padding: 0;
+    li{
+    padding: 20px 20px;
+       border-top: 0.5px solid #DDDDDD;
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+       cursor: pointer;
+    }
+    li:hover{
+        background-color: #f3f3f3;
+    }
+}
