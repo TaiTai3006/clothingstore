@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import "./_productCard.scss";
-import ReactStars from "react-stars";
+// import ReactStars from "react-stars";
 import React, { useState } from "react";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import { IconContext } from "react-icons";
@@ -79,14 +79,14 @@ export const ProductCard = () => {
       </div>
       <div className="product-name">I Love Levents® Oversize Tee</div>
       <div className="product-rank">
-        <ReactStars
+        {/* <ReactStars
           count={5}
           size={15}
           value={3.5}
           edit={false}
           color1={"#f3f3f3"}
           color2={"#ffb729"}
-        />
+        /> */}
       </div>
       <div className="product-price">390.000 VND</div>
     </div>
