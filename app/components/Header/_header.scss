@@ -26,6 +26,9 @@
     padding: 40px 20px;
     border-width: 1px;
     border-style: solid;
+    .menu .search-mobile{
+        display: none;
+    }
     .logo{
         background-color: black;
         color: white;
@@ -57,3 +60,40 @@
         background-color: #f3f3f3;
     }
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .header-container .combo-logo {
+        min-width: 10%;
+    }
+
+    .header-container .menu{
+        min-width: 10%;
+    }
+   
+}
+
+@media only screen and (max-width: 480px) {
+    .sale-container{
+        display: none;
+    }
+
+    .header-container{
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            width: 15%;
+            .search-mobile{
+                display: block;
+            }
+        }
+
+        .search-web{
+            display: none;
+        }
+        .combo-logo{
+            width: 15%;
+        }
+    }
+    
+  }
+

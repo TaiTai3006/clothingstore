@@ -11,7 +11,6 @@ import { IconContext } from "react-icons";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import { MdNavigateNext } from "react-icons/md";
 
-
 export const Header = () => {
   const [time, setTime] = useState(10);
   const [show, setShow] = useState(false);
@@ -53,10 +52,13 @@ export const Header = () => {
 
       <div className="header-container">
         <IconContext.Provider value={{ size: "25px" }}>
-          <CiMenuBurger style={{ cursor: "pointer" }} onClick={handleShow} />
+          <div className="menu">
+            <CiMenuBurger style={{ cursor: "pointer" }} onClick={handleShow} />
+            <CiSearch className="search-mobile"/>
+          </div>
           <div className="logo">Levents</div>
           <div className="combo-logo">
-            <CiSearch />
+            <CiSearch  className="search-web"/>
             <CiShoppingBasket />
             <CiUser />
           </div>
@@ -64,19 +66,29 @@ export const Header = () => {
       </div>
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title style={{fontSize: '18px'}}>Danh mục</Offcanvas.Title>
+          <Offcanvas.Title style={{ fontSize: "18px" }}>
+            Danh mục
+          </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body style={{padding:'0'}}>
+        <Offcanvas.Body style={{ padding: "0" }}>
           <ul className="menu-nav">
-          <IconContext.Provider value={{ size: "25px", color: '#939393' }}>
-            <li>NEW ARRIVAL</li>
-            <li>ALL PRODUCTS</li>
-            <li>TOPS <MdNavigateNext /></li>
-            <li>BOTTOMS <MdNavigateNext /></li>
-            <li>OUTERWEAR <MdNavigateNext /></li>
-            <li>ACCESSORIES <MdNavigateNext /></li>
-            <li>LEVENTS CLASSIC</li>
-            <li>SPECIAL PRICES</li>
+            <IconContext.Provider value={{ size: "25px", color: "#939393" }}>
+              <li>NEW ARRIVAL</li>
+              <li>ALL PRODUCTS</li>
+              <li>
+                TOPS <MdNavigateNext />
+              </li>
+              <li>
+                BOTTOMS <MdNavigateNext />
+              </li>
+              <li>
+                OUTERWEAR <MdNavigateNext />
+              </li>
+              <li>
+                ACCESSORIES <MdNavigateNext />
+              </li>
+              <li>LEVENTS CLASSIC</li>
+              <li>SPECIAL PRICES</li>
             </IconContext.Provider>
           </ul>
         </Offcanvas.Body>

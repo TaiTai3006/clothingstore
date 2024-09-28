@@ -19,9 +19,9 @@ export const Footer = () => {
           <div className="text-footer">Levents® - Share your Color</div>
           <button className="button-footer">Xem ngay</button>
         </Col>
-        <Col>
+        <Col className="col-info">
           <Row className="contact-container">
-            <Col>
+            <Col className="col-contact">
               <Col>Liên hệ</Col>
               <Col className="contact-title">
                 <div>
@@ -58,8 +58,8 @@ export const Footer = () => {
                 </div>
               </Col>
             </Col>
-            <Col>
-              <Col>Cửa hàng</Col>
+            <Col className="col-store">
+              <Col >Cửa hàng</Col>
               <Col className="contact-title">
                 139E Nguyễn Trãi, Phường Bến Thành, Quận 1, HCM
               </Col>
@@ -70,7 +70,7 @@ export const Footer = () => {
                 54 Mậu Thân, An Phú, quận Ninh Kiều, Cần Thơ
               </Col>
             </Col>
-            <Col>
+            <Col className="col-support">
               <Col>Hỗ trợ</Col>
               <Col className="contact-title">Easy shopping</Col>
               <Col className="contact-title">Tài khoản</Col>
@@ -83,7 +83,7 @@ export const Footer = () => {
                 Hướng dẫn mua hàng và bảo quản
               </Col>
             </Col>
-            <Col>
+            <Col className="col-extend">
               <Col>Mở rộng</Col>
               <Col className="contact-title">CSR</Col>
               <Col className="contact-title">Tuyển dụng</Col>

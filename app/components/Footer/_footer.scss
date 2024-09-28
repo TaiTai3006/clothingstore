@@ -50,3 +50,61 @@
     }
     
 }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    .footer-container{
+        .col-logo{
+            max-width: 30%;
+        }
+    }
+   
+}
+
+@media only screen and (max-width: 480px) {
+    .footer-container .row{
+        flex-direction: column;
+
+        .col-logo{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
+            .logo {
+                margin: 0 25%;
+            }
+
+            .button-footer {
+                background-color: black;
+                color: white;
+                font-size: 12px;
+                padding: 10px 20px;
+            }
+
+            .text-footer{
+                margin: 10px 0;
+                font-size: 12px;
+            }
+        }
+
+        .col-info{
+            margin-top: 20px;
+            .col-store{
+                display: none;
+            }
+
+            .col-support{
+                display: none;
+            }
+
+            .col-extend{
+                display: none;
+            }
+        }
+    }
+
+    .footer-container .contact-container .contact-title .logo-media {
+        width: 40%;
+    }
+    
+}

@@ -48,9 +48,431 @@
        
     }
 
-   
+    .styling-container{
+        margin-top: 30px;
+        position: relative;
+        .title{
+            padding: 0 20px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+
+            &-name{
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            &-button{
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+            }
+
+        }
+
+        .content{
+            margin-top: 20px;
+            display: flex;
+            overflow-y: scroll; /* Hiển thị thanh cuộn ngang */
+            overflow: hidden;
+            flex-wrap: nowrap; /* Không cho phép xuống hàng */
+            
+
+            &-container{
+                border:  1px solid #e6e6e6;
+                border-right: none;
+                flex: 0 0 25%; /* Chiếm 25% chiều rộng của container, 4 card vừa 100% */
+               
+                max-width: 25%;
+                padding: 20px 20px;
+               
+            }
+
+            
+        }
+        
+        .icon{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+        }
+       
+       
+    }
+
+    .color-gradient-container{
+        background-color: #fbfbfb;
+        display: flex;
+        padding: 20px 20px 40px 20px;
+        margin-top: 20px;
+        align-items: center;
+        .video{
+            
+            video{
+                width: 95%;
+                
+            }
+            
+        }
+
+        .content{
+            padding-left: 2%;
+            h2{
+                font-weight: 300;
+            }
+
+            button{
+                margin-top: 20px;
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                font-weight: 300;
+                padding: 10px 60px;
+            }
+
+            p{
+                margin-top: 20px;
+            }
+            
+          
+        }
+
+        
+        
+    }
+    
+    .image-with-text-container{
+        background-color: #fbfbfb;
+        display: flex;
+        padding: 40px 20px 20px 20px;
+        align-items: center;
+        width: 100%;
+
+       
+
+        .content{
+            width: 50%;
+            padding-left: 2%;
+            h2{
+                font-weight: 300;
+            }
+
+            button{
+                margin-top: 20px;
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                font-weight: 300;
+                padding: 10px 60px;
+            }
+
+            p{
+                margin-top: 20px;
+            }
+            
+          
+        }
+        
+    }
+
+    .our-collection-container{
+        margin-top: 30px;
+        position: relative;
+        .title{
+            padding: 0 20px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+
+            &-name{
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            &-button{
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+            }
+
+        }
+
+        .content{
+            margin-top: 20px;
+            display: flex;
+            overflow-y: scroll; /* Hiển thị thanh cuộn ngang */
+            overflow: hidden;
+            
+            
+            
+
+            &-container{
+                // border:  1px solid #e6e6e6;
+                // border-right: none;
+                // flex: 0 0 50%; /* Chiếm 25% chiều rộng của container, 4 card vừa 100% */
+                cursor: pointer;
+                min-width: 30%;
+                padding: 20px 0px 20px 20px;
+               
+            }
+
+            
+
+            
+        }
+        
+        .icon{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+        }
+
+        .image-name{
+            margin-top: 10px;
+        }
+
+        .img-container{
+           width: 100%;
+            
+            overflow:hidden;
+        }
+
+        img{
+            width: 100%;
+            transition: transform 0.4s ease;
+            transform-origin: 50% 50%;
+        }
+
+        .content-container:hover{
+            img{
+                transform: scale(1.05);
+                width: 100%;
+            }
+            
+        }
+
+        
+       
+       
+    }
+
+    .feedback-container{
+        margin-top: 30px;
+        position: relative;
+        .title{
+            padding: 0 20px;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+
+            &-name{
+                font-size: 18px;
+                font-weight: 400;
+            }
+
+            &-button{
+                font-size: 16px;
+                background-color: black;
+                color: white;
+                padding: 10px 20px;
+            }
+
+        }
+
+        .content{
+            margin-top: 20px;
+            display: flex;
+            overflow-y: scroll; /* Hiển thị thanh cuộn ngang */
+            overflow: hidden;
+            
+            
+            
+
+            &-container{
+                // border:  1px solid #e6e6e6;
+                // border-right: none;
+                // flex: 0 0 50%; /* Chiếm 25% chiều rộng của container, 4 card vừa 100% */
+                cursor: pointer;
+                min-width: 30%;
+                max-height: 500px;
+                padding: 20px 0px 20px 20px;
+               
+            }
+
+            
+
+            
+        }
+        
+        .icon{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 1.5em;
+        }
+
+        .image-name{
+            margin-top: 10px;
+        }
+
+       
+
+        
+       
+       
+    }
+       
 
     
-   
-
 }
+
+@media only screen and  (max-width: 1024px){
+    .btn-text{
+        display: none;
+    }
+    .home-container .image-with-text-container .content {
+        width: 80%;
+        padding-left: 0;
+        padding-right: 20px;
+    }
+    .home-container .image-with-text-container .image{
+        
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+    
+
+    .home-container .color-gradient-container {
+        align-items: flex-start;
+        
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .home-container .color-gradient-container {
+        flex-direction: column;
+    }
+    .color-gradient-container .video{
+        display: flex;
+        justify-content: center;
+    }
+    .home-container .color-gradient-container .video video {
+        width: 100%;
+    }
+
+    .home-container .color-gradient-container .content {
+        margin-top: 20px;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .color-gradient-container{
+        h2,p{
+            text-align: center;
+        }
+
+        h2{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }
+
+    .home-container .color-gradient-container .content p {
+        margin-top: 10px;
+    }
+
+    .home-container .color-gradient-container .content button {
+        font-size: 10px;
+    }
+
+    .home-container .image-with-text-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .home-container .image-with-text-container .content {
+        width: 100%;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    .home-container .image-with-text-container .content h2,p {
+        text-align: center;
+    }
+
+    .image-with-text-container .content{
+        h2{
+            font-size: 16px;
+        }
+
+        p{
+            font-size: 12px;
+        }
+    }
+
+    .home-container .image-with-text-container .content p {
+        margin-top: 10px;
+    }
+
+    .home-container .image-with-text-container .content button{
+        font-size: 10px;
+    }
+
+    .home-container .our-collection-container .title-name {
+        font-size: 16px;
+    }
+
+    .home-container .our-collection-container .title-button {
+        font-size: 10px;
+    }
+
+    .home-container .our-collection-container .content-container {
+        min-width: 85%;
+    }
+    
+    .home-container .our-collection-container .image-name {
+        font-size: 12px;
+    }
+
+    .home-container .feedback-container .title-name {
+        font-size: 16px;
+    }
+
+    .home-container .feedback-container .title-button{
+        font-size: 10px;
+    }
+
+    .home-container .feedback-container .content-container {
+        min-width: 85%;
+        max-height: 350px;
+    }
+
+  
+
+
+  }
