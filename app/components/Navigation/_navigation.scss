@@ -1,0 +1,16 @@
+.nav-container{
+    display: flex;
+    font-size: 14px;
+    font-weight: 400;
+    a{
+        color: gray;
+        text-decoration: none;
+    }
+    .current-situation{
+        color: black;
+    }
+    .space{
+        margin: 0 10px;
+    }
+
+}

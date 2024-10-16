@@ -104,7 +104,16 @@
     }
 
     .footer-container .contact-container .contact-title .logo-media {
-        width: 40%;
+        width: 60%;
+    }
+
+    .footer-container .contact-container{
+        text-align: center;
+    }
+
+    .footer-container .contact-title{
+        display: flex;
+        justify-content: center;
     }
     
 }
