@@ -10,7 +10,7 @@ import { useState, useRef } from "react";
 import { ProductCard } from "./components/ProductCard/ProductCard";
 import StyleProductCard from "./components/StyleProduct/StyleProductCard";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
-import { IconContext } from "react-icons";
+import Link from "next/link";
 
 export default function Home() {
   const contentRef = useRef<HTMLDivElement>(null); // Chỉ định kiểu HTMLDivElement
@@ -53,7 +53,7 @@ export default function Home() {
           sizes="100vw"
           style={{ width: "100%", height: "auto" }}
         />
-        <div className="btn-text">Xem sản phẩm</div>
+        <Link  href="/collections/all" className="btn-text">Xem sản phẩm</Link>
       </div>
       <Container>
         <Tabs
